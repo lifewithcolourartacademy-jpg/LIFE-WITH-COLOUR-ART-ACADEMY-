@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIFE WITH COLOUR ART ACADEMY</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #ff6f61, #6c63ff, #ffb347);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      background: white;
+      padding: 5px;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffb347;
+      color: black;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    #gallery .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input, form select, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    form button {
+      background: linear-gradient(90deg, #6c63ff, #ff6f61);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: linear-gradient(90deg, #ff6f61, #6c63ff);
+    }
+    footer {
+      background: linear-gradient(90deg, #ff6f61, #6c63ff, #ffb347);
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="IMG_20250815_145228.jpg" alt="Academy Logo">
+  <h1>LIFE WITH COLOUR ART ACADEMY</h1>
+  <p>শিল্পের মাধ্যমে শিক্ষার আলো ছড়াই</p>
+</header>
+
+<nav>
+  <a href="#home">হোম</a>
+  <a href="#about">আমাদের সম্পর্কে</a>
+  <a href="#courses">কোর্সসমূহ</a>
+  <a href="#gallery">গ্যালারি</a>
+  <a href="#admission">এডমিশন ফর্ম</a>
+  <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<section id="home">
+  <h2>স্বাগতম!</h2>
+  <p><strong>LIFE WITH COLOUR ART ACADEMY</strong>-তে আপনাকে স্বাগতম। আমরা শিশু ও কিশোরদের সৃজনশীলতা বিকাশে সহায়তা করি শিল্প ও শিক্ষার মাধ্যমে।</p>
+</section>
+
+<section id="about">
+  <h2>আমাদের সম্পর্কে</h2>
+  <p>আমাদের প্রতিষ্ঠান 2025 সাল থেকে শিল্প, ছবি আঁকা, হস্তশিল্প ও নানান সৃজনশীল বিষয়ের মাধ্যমে শিক্ষার্থীদের অনুপ্রাণিত করে যাচ্ছে। আমাদের দক্ষ প্রশিক্ষক ও বন্ধুসুলভ পরিবেশ শিক্ষার্থীদের শেখার প্রতি আগ্রহী করে তোলে।</p>
+</section>
+
+<section id="courses">
+  <h2>কোর্সসমূহ</h2>
+  <ul>
+    <li>চিত্রাঙ্কন (Drawing & Sketching)</li>
+    <li>রঙ ব্যবহারের শিক্ষা (Watercolour, Acrylic, Oil Painting)</li>
+    <li>হস্তশিল্প (Crafting, Paper Art)</li>
+    <li>শিশুদের সৃজনশীল শিক্ষা</li>
+    <li>বিশেষ আর্ট ওয়ার্কশপ</li>
+  </ul>
+</section>
+
+<section id="gallery">
+  <h2>গ্যালারি</h2>
+  <div class="gallery">
+    <img src="Screenshot_2025-08-15-14-34-51-197_com.instagram.android.png" alt="Art Class 1">
+    <img src="Screenshot_2025-08-15-14-34-31-498_com.instagram.android.png" alt="Art Class 2">
+    <img src="Screenshot_2025-08-15-14-33-15-715_com.google.android.apps.maps.png" alt="Location">
+  </div>
+</section>
+
+<section id="admission">
+  <h2>এডমিশন ফর্ম</h2>
+  <form action="https://formsubmit.co/lifewithcolour@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="নাম" required>
+    <input type="number" name="age" placeholder="বয়স" required>
+    <input type="text" name="address" placeholder="ঠিকানা" required>
+    <input type="tel" name="phone" placeholder="ফোন নম্বর" pattern="[0-9]{10}" required>
+    <select name="course" required>
+      <option value="">কোর্স নির্বাচন করুন</option>
+      <option value="Drawing & Sketching">চিত্রাঙ্কন</option>
+      <option value="Painting">রঙ ব্যবহারের শিক্ষা</option>
+      <option value="Crafting">হস্তশিল্প</option>
+      <option value="Kids Creative">শিশুদের সৃজনশীল শিক্ষা</option>
+      <option value="Workshop">বিশেষ আর্ট ওয়ার্কশপ</option>
+    </select>
+    <textarea name="message" placeholder="অতিরিক্ত বার্তা (ঐচ্ছিক)"></textarea>
+    <button type="submit">সাবমিট করুন</button>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://thankyou.page">
+  </form>
+</section>
+
+<section id="contact">
+  <h2>যোগাযোগ</h2>
+  <p>📍 ঠিকানা: Vill-Rajuakhaki, P.O- Pakurtala, P.S.: Raidighi, Dist- South 24 pgs, pin- 743349</p>
+  <p>✉️ ইমেইল: lifewithcolourartacademy@gmail.com</p>
+  <p>📌 Facebook: https://www.facebook.com/share/1C3HWoUZLH/</p>
+</section>
+
+<footer>
+  <p>&copy; ২০২৫ LIFE WITH COLOUR ART ACADEMY. সর্বস্বত্ব সংরক্ষিত।</p>
+</footer>
+
+</body>
+</html>
